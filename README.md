@@ -57,8 +57,12 @@ $ docker run -it --entrypoint=/bin/bash -v $(pwd)/evmwasmfiles:/evmwasmfiles -v 
 
 ### run geth native precompile benchmarks
 ## parse results and save to /evmraceresults/geth_precompile_benchmarks.csv
-$ PYTHONIOENCODING=UTF-8 python3 precompileracer.py
+$ PYTHONIOENCODING=UTF-8 python3 benchgethprecompiles.py
 
+
+### run parity native precompile benchmarks
+## parse results and save to /evmraceresults/parity_precompile_benchmarks.csv
+$ PYTHONIOENCODING=UTF-8 python3 benchparityprecompiles.py
 
 $ PYTHONIOENCODING=UTF-8 python3 evmracer.py
 
